@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    /* -------------------------------- COLOURS -------------------------------- */
+  --color-pale-sky: #C9E0EB;
+  --color-dusty-denim: #7392B5;
+  --color-deep-lilac: #8350C4;
+  --color-midnight-violet: #402B47;
+
+  /* shadow, gradient */
+  --color-shadow-grey: #262423;
+  --color-gradient-purple: linear-gradient(to right, #4A0083, #7967CD);
+
+  /* aditionals colours */
+  --color-dark-bg: #161A1E;
+  --color-light-bg: #DEECEF;
+  
+  /* secondary colours */
+  --color-purple-primary: #4A0083;
+  --color-purple-secondary: #7967CD;
+}
