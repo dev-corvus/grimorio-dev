@@ -1,12 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 :root {
-    /* -------------------------------- COLOURS -------------------------------- */
+  /* -------------------------------- COLOURS -------------------------------- */
   --color-pale-sky: #C9E0EB;
   --color-dusty-denim: #7392B5;
   --color-deep-lilac: #8350C4;
@@ -19,8 +19,36 @@
   /* aditionals colours */
   --color-dark-bg: #161A1E;
   --color-light-bg: #DEECEF;
-  
-  /* secondary colours */
+
+  /* secondary colors */
   --color-purple-primary: #4A0083;
   --color-purple-secondary: #7967CD;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-bg);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero img{
+  width: 100%;
+  max-width: 320px;
+  height: auto;
 }
