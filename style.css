@@ -43,6 +43,7 @@
 body {
   background-color: #161A1E;
 }
+
 section {
   margin: 50px 50px;
   padding: 15px 15px;
@@ -55,7 +56,7 @@ section {
   gap: 1rem;
 }
 
-h2 {
+h1 {
   border-style: solid;
   border-radius: 0.625rem;
   height: 100px;
@@ -68,8 +69,8 @@ h2 {
   display: flex;
   margin: 0rem;
 
-  color:#7967CD;
-  background-color:#161A1E;
+  color: #7967CD;
+  background-color: #161A1E;
 }
 
 button {
@@ -88,8 +89,10 @@ button {
   cursor: pointer;
 
   color: #7967CD;
-  background-color:#161A1E;
+  background-color: #161A1E;
   border-color: #7967CD;
+
+  transition: background-color 0.3s ease;
 }
 
 .pular {
@@ -98,7 +101,7 @@ button {
 }
 
 button:hover {
-  background-color:#7967CD;
+  background-color: #7967CD;
   color: #161A1E;
 }
 
@@ -107,8 +110,21 @@ button:hover {
 /* footer */
 
 footer {
-  background-color:#7967CD;
+  background-color: #7967CD;
   height: 60px;
   padding: 1rem;
   font-size: 0.75rem;
+  color: #161A1E;
+}
+
+/* Seção sobre */
+
+.logoss {
+  padding: 5rem;
+  color: #7967CD;
+}
+
+h2,
+p {
+  color: #7967CD;
 }
