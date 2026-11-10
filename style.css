@@ -114,7 +114,11 @@ footer {
   height: 3.75rem;
   padding: 1rem;
   font-size: 0.75rem;
-  color: #161A1E;
+  color:#161A1E;
+}
+
+.footp {
+  color:#161A1E;
 }
 
 /* Seção sobre */
