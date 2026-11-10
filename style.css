@@ -107,7 +107,7 @@ button:hover {
 
 /*  --------------------------------- */
 
-/* footer */
+/* ---------------- footer ---------------*/
 
 footer {
   background-color: #7967CD;
@@ -132,3 +132,11 @@ h2,
 p {
   color: #7967CD;
 }
+
+/* --------Animação botão------------- */
+.study-button:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+/* --------Adaptar para diferentes telas----------- */
