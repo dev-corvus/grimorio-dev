@@ -30,12 +30,12 @@
 
 .logo {
   background-color: #8350C4;
-  height: 70px;
+  height: 4.375rem;
   padding: 1rem;
 }
 
 .logo img {
-  width: 50px;
+  width: 3.125rem;
 }
 
 /* Corpo da página */
@@ -45,8 +45,8 @@ body {
 }
 
 section {
-  margin: 50px 50px;
-  padding: 15px 15px;
+  margin: 3.125rem 3.125rem;
+  padding: 0.938rem 0.938rem;
   /* margin: 2rem;
   padding: 2rem; */
   text-align: center;
@@ -59,13 +59,13 @@ section {
 h1 {
   border-style: solid;
   border-radius: 0.625rem;
-  height: 100px;
-  padding: 80px 45px;
+  height: 6.25rem;
+  padding: 5rem 2.813rem;
   /* margin: 3rem;
   padding: 2rem; */
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 18.75rem;
   display: flex;
   margin: 0rem;
 
@@ -76,16 +76,16 @@ h1 {
 button {
   border-style: solid;
   border-radius: 0.625rem;
-  padding: 35px 10px;
+  padding: 2.188rem 0.625rem;
   margin: 0rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 300px;
+  width: 18.75rem;
   display: block;
-  height: 100px;
+  height: 6.25rem;
   cursor: pointer;
 
   color: #7967CD;
@@ -96,8 +96,8 @@ button {
 }
 
 .pular {
-  padding: 10px;
-  height: 50px;
+  padding: 0.625rem;
+  height: 3.125rem;
 }
 
 button:hover {
@@ -111,7 +111,7 @@ button:hover {
 
 footer {
   background-color: #7967CD;
-  height: 60px;
+  height: 3.75rem;
   padding: 1rem;
   font-size: 0.75rem;
   color: #161A1E;
