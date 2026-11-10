@@ -1,54 +1,191 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
+/* 1. Variáveis da Paleta de Cores & Reset Geral */
+:root {
+    --pale-sky: #C9E0EB;
+    --dusty-denim: #7392B5;
+    --deep-lilac: #8350C4;
+    --midnight-violet: #402B47;
+    --shadow-grey: #262423;
+    --bg-dark: #0e0c14;
 }
 
-:root {
-  /* -------------------------------- COLOURS -------------------------------- */
-  --color-pale-sky: #C9E0EB;
-  --color-dusty-denim: #7392B5;
-  --color-deep-lilac: #8350C4;
-  --color-midnight-violet: #402B47;
-
-  /* shadow, gradient */
-  --color-shadow-grey: #262423;
-  --color-gradient-purple: linear-gradient(to right, #4A0083, #7967CD);
-
-  /* aditionals colours */
-  --color-dark-bg: #161A1E;
-  --color-light-bg: #DEECEF;
-
-  /* secondary colors */
-  --color-purple-primary: #4A0083;
-  --color-purple-secondary: #7967CD;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: var(--color-dark-bg);
-  color: var(--color-light-bg);
-  font-family: Arial, sans-serif;
+    background-color: var(--bg-dark); 
+    background-image: radial-gradient(circle at center, #261f38 0%, var(--bg-dark) 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-header {
-  display: flex;
-  justify-content: flex-start;
-  padding: 20px;
+/* 2. Layouts Base */
+.container, .features-section, .transformation-section {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
-  padding: 20px;
-  text-align: center;
+.container { text-align: center; }
+.features-section, .transformation-section { margin-top: 20px; }
+
+/* 3. Tipografia & Destaques */
+h1, .hero-brand h1, .student-name, .credits h3 { color: var(--pale-sky); }
+h2 { font-size: 1.1rem; color: #ffffff; margin-bottom: 15px; }
+
+.subtitle, .description, .section-intro, .transformation-intro, 
+.card-content p, .step-content p, .footer-call, .students-group {
+    color: #b0a8c0;
+    font-size: 0.8rem;
+    line-height: 1.4;
 }
 
-.hero img{
-  width: 100%;
-  max-width: 320px;
-  height: auto;
+/* 4. Formulário e Inputs */
+form { display: flex; flex-direction: column; gap: 15px; text-align: left; }
+
+.input-group { position: relative; display: flex; flex-direction: column; }
+.input-group label { font-size: 0.85rem; margin-bottom: 5px; color: #d1d1d1; }
+
+.input-group input {
+    background-color: #1d1929;
+    border: 1px solid var(--deep-lilac);
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(131, 80, 196, 0.25);
+}
+
+.input-group input:focus {
+    border-color: var(--pale-sky);
+    box-shadow: 0 0 12px rgba(201, 224, 235, 0.4);
+}
+
+.counter, .helper { font-size: 0.7rem; color: #8c8c9b; position: absolute; right: 10px; bottom: -18px; }
+
+/* 5. Botões */
+.btn-cadastrar {
+    margin-top: 15px;
+    background-color: #1d1929;
+    color: var(--pale-sky);
+    border: 1px solid var(--deep-lilac);
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(131, 80, 196, 0.3);
+}
+
+.btn-cadastrar:hover {
+    background-color: var(--deep-lilac);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(131, 80, 196, 0.6);
+}
+
+/* 6. Componentes Reutilizáveis (Cards) */
+.card, .step-card {
+    background-color: #1d1929;
+    border: 1px solid var(--deep-lilac);
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 10px rgba(131, 80, 196, 0.15);
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    background-color: var(--deep-lilac);
+    color: #ffffff;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-number {
+    background-color: #ffffff;
+    color: var(--bg-dark);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.students-list, .step-cards, .resource-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.student-card { display: flex; align-items: center; gap: 12px; }
+
+.avatar { 
+    width: 45px; height: 45px; background-color: #dcdcdc; border-radius: 50%; flex-shrink:0; }
+
+/* 7. Rodapé */
+.footer-section { 
+    text-align: center; 
+    padding-top: 20px; 
+    border-top: 1px solid rgba(131, 80, 196, 0.2); }
+
+.credits {
+    background-color: rgba(29, 25, 41, 0.5);
+    border: 1px dashed rgba(131, 80, 196, 0.4);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.login-redirect a { color: #ffffff; font-weight: bold; text-decoration: underline; }
+
+.student-card {
+    display: flex;
+    align-items: center; 
+    /* Alinha o avatar verticalmente com o texto */
+    gap: 15px;
+    background-color: #1d1929;
+    border: 1px solid var(--deep-lilac);
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.student-info {
+    text-align: left;
+}
+
+body {
+    background-color: var(--bg-dark); 
+    background-image: radial-gradient(circle at center, #261f38 0%, var(--bg-dark) 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo no meio da tela */
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.mago-img {
+    width: 120px; /* Reduza para o tamanho que achar melhor (ex: 120px ou 150px) */
+    max-width: 100%;
+    height: auto;
 }
