@@ -1,12 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 :root {
-    /* -------------------------------- COLOURS -------------------------------- */
+  /* -------------------------------- COLOURS -------------------------------- */
   --color-pale-sky: #C9E0EB;
   --color-dusty-denim: #7392B5;
   --color-deep-lilac: #8350C4;
@@ -19,8 +20,195 @@
   /* aditionals colours */
   --color-dark-bg: #161A1E;
   --color-light-bg: #DEECEF;
-  
+
   /* secondary colours */
   --color-purple-primary: #4A0083;
   --color-purple-secondary: #7967CD;
 }
+
+/* Navegação */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* Cabeçalho */
+
+.logo {
+  background-color: #8350C4;
+  height: 4.375rem;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 3.125rem;
+}
+
+/* Corpo da página */
+
+body {
+  background-color: #161A1E;
+  display: flex;
+  flex-direction: column;
+   min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  margin: 3.125rem 3.125rem;
+  padding: 0.938rem 0.938rem;
+  /* margin: 2rem;
+  padding: 2rem; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  border-style: solid;
+  border-radius: 0.625rem;
+  height: 6.25rem;
+  padding: 5rem 2.813rem;
+  /* margin: 3rem;
+  padding: 2rem; */
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  display: flex;
+  margin: 0rem;
+
+  color: #7967CD;
+  background-color: #161A1E;
+}
+
+button {
+  border-style: solid;
+  border-radius: 0.625rem;
+  padding: 2.188rem 0.625rem;
+  margin: 0rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 18.75rem;
+  display: block;
+  height: 6.25rem;
+  cursor: pointer;
+
+  color: #7967CD;
+  background-color: #161A1E;
+  border-color: #7967CD;
+
+  transition: background-color 0.3s ease;
+}
+
+.alternativas,
+.bt-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pular {
+  padding: 0.625rem;
+  height: 3.125rem;
+  border-radius: 1.5rem;
+}
+
+button:hover {
+  background-color: #7967CD;
+  color: #161A1E;
+}
+
+/* ---------------- footer ---------------*/
+
+footer {
+  background-color: #7967CD;
+  height: 3.75rem;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color:#161A1E;
+  align-items: center;
+  justify-content: center;
+}
+
+.footp, 
+.pp {
+  color:#161A1E;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Seção sobre */
+
+.logoss {
+  padding: 5rem;
+  color: #7967CD;
+}
+
+h2,
+p {
+  color: #7967CD;
+}
+
+/* --------Animação botão------------- */
+.study-button:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+/* --------Adaptar para diferentes telas----------- */
+@media (min-width: 48rem) {
+  /* .logoss{
+    width: 50rem;
+  } */
+
+  /* ------------- Página de quiz ---------------  */
+  h1 {
+    width: 56rem;
+    height: 16rem;
+  }
+
+  .alternativas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .bt-alt {
+    width: 25rem;
+    height: 3.75rem;
+    justify-content: center;
+  }
+
+  .pular {
+    width: 16rem;
+    display: block;
+    margin: 1.5rem auto 0;
+  }
+
+  /* ------------Página da seção sobre------------- */
+
+    p{
+      width: 40rem;
+    }
+
+    .logo-cat {
+      /* display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem; */
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+}
+
+/* -------Orientação hotizontal------------ */
