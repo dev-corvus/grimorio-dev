@@ -185,7 +185,20 @@ body {
 }
 
 .mago-img {
-    width: 120px; /* Reduza para o tamanho que achar melhor (ex: 120px ou 150px) */
+    width: 7.5rem; /* Reduza para o tamanho que achar melhor (ex: 120px ou 150px) */
     max-width: 100%;
+    height: auto;
+}
+
+/* Alinha a logo do topo à esquerda */
+.top-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-logo img {
+    width: 6.25rem; /* Ajuste o tamanho do ícone aqui se necessário */
     height: auto;
 }
