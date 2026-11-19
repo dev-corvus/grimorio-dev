@@ -7,15 +7,18 @@
   <img src="https://shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=fff" alt="HTML" />
   <img src="https://shields.io/badge/CSS-639?logo=css&logoColor=fff" alt="CSS" />
   <img src="https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=fff" />
+</div>
 
-  <a href="https://www.serasaexperian.com.br/transforme-se/" style="display: inline-flex; align-items: center; padding: 6px 10px; margin: 4px; border-radius: 4px;">
-    <img src="./assets/images/transforme-se-logo.jpeg" alt="Transforme-se" width="150" style="border-radius: 4px" /></a>
-  <a href="https://www.proa.org.br/" style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; margin: 4px; border-radius: 4px; text-decoration: none; color: #3938FF">
-      <img src="./assets/images/icons/proa-logo.png" alt="" width="32" height="32" style="border-radius: 4px" />
-      <strong>Instituto PROA</strong></a>
-  <a href="https://www.serasaexperian.com.br/" style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; margin: 4px; border-radius: 4px; text-decoration: none; color: #E63888">
-      <img src="./assets/images/icons/serasa-logo.png" alt="" width="32" height="32" style="border-radius: 4px" />
-      <strong>Serasa Experian</strong></a>
+<div align="center">
+  <a href="https://www.serasaexperian.com.br/transforme-se/">
+    <img src="./assets/images/transforme-se-logo.jpeg" alt="Transforme-se" height="20" style="border-radius: 4px;" />
+  </a>
+  <a href="https://www.proa.org.br/">
+    <img src="./assets/images/icons/proa-logo.png" alt="Instituto PROA" height="20" style="border-radius: 4px;" />
+  </a>
+  <a href="https://www.serasaexperian.com.br/">
+    <img src="./assets/images/icons/serasa-logo.png" alt="Serasa Experian" height="20" style="border-radius: 4px;" />
+  </a>
 </div>
 
 ---
@@ -50,7 +53,7 @@
 | Kauê Batista | Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/kauebatista72) |
 | Leila Cristina | Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/spheressong-wq) |
 | Nicolly Menezes | UX/UI |  - | - |
-| Riyan Querino | Scrum Master/Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/dev-corvus/) |
+| Riyan Querino | Scrum Master/Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/phantera-ark)|
 
 ## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/feature-icon.png"> Features
 
@@ -66,7 +69,7 @@
 | **Markup & Semantics** | HTML5 (Semantic Elements, ARIA Attributes) |
 | **Styling & Layout** | CSS3 (Flexbox, CSS Variables, Media Queries, Focus States) |
 | **Design & Assets** | [Figma](https://www.figma.com/design/cKmA01QadQI2HPQhdcaH5H/portifolio23?node-id=0-1&p=f&t=pVNOAur8NRrnLEsz-0), [Google Fonts](https://fonts.google.com/specimen/Courier+Prime) |
-| **Version Control & Collaboration** | [Git, GitHub](https://github.com/dev-corvus)|
+| **Version Control & Collaboration** | [Git, GitHub](https://github.com/grimorio-dev)|
 | **Code Editor** | Visual Studio Code |
 |  **Deployment & Build Tools:** | [GitHub Pages](https://dev-corvus.github.io/portfolio) |
 
