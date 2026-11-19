@@ -10,16 +10,9 @@
 </div>
 
 <div align="center">
-  <a href="https://www.serasaexperian.com.br/transforme-se/">
-    <img src="./assets/images/transforme-se-logo.jpeg" alt="Transforme-se" height="20" style="border-radius: 4px;" />
-  </a>
-  <a href="https://www.proa.org.br/">
-    <img src="./assets/images/icons/proa-logo.png" alt="Instituto PROA" height="20" style="border-radius: 4px;" />
-  </a>
-  <a href="https://www.serasaexperian.com.br/">
-    <img src="./assets/images/icons/serasa-logo.png" alt="Serasa Experian" height="20" style="border-radius: 4px;" />
-  </a>
+  <a href="https://serasaexperian.com.br"><img src="./assets/images/transforme-se-logo.png" alt="Transforme-se" height="26" valign="middle" /></a>&nbsp;&nbsp;<a href="https://proa.org.br"><img src="./assets/images/icons/proa-logo.png" alt="Instituto PROA" height="24" valign="middle" /></a>&nbsp;&nbsp;<a href="https://serasaexperian.com.br"><img src="./assets/images/icons/serasa-logo.png" alt="Serasa Experian" height="28" valign="middle" /></a>
 </div>
+
 
 ---
 
