@@ -1,20 +1,24 @@
 <p align="center">
-  <a href="https://www.figma.com/design/RDQjro76rHCHRuB0rXhTfd/Grim%C3%B3rio-Dev?node-id=0-1&p=f" style="text-decoration:none">
-    <img src="https://shields.io/badge/figma-link-purple?logo=figma&logoColor=white" alt="Figma" />
-  </a>
-  <a href="https://dev-corvus.github.io/grimorio-dev">
-    <img src="https://img.shields.io/badge/github_pages-deploy-blue?logo=github&logoColor=white" alt="GitHub Pages" />
-  </a>
+  <a href="https://www.figma.com/design/RDQjro76rHCHRuB0rXhTfd/Grim%C3%B3rio-Dev?node-id=0-1&p=f"><img src="https://shields.io/badge/figma-link-purple?logo=figma&logoColor=white" alt="Figma" /></a>
+  <a href="https://dev-corvus.github.io/grimorio-dev"><img src="https://img.shields.io/badge/github_pages-deploy-blue?logo=github&logoColor=white" alt="GitHub Pages" /></a>
 </p>
 
-<p align="center">
+<div align="center">  
   <img src="https://shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=fff" alt="HTML" />
   <img src="https://shields.io/badge/CSS-639?logo=css&logoColor=fff" alt="CSS" />
   <img src="https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=fff" />
-</p>
+</div>
+
+<div align="center">
+  <a href="https://serasaexperian.com.br"><img src="./assets/images/transforme-se-logo.png" alt="Transforme-se" height="26" valign="middle" /></a>&nbsp;&nbsp;<a href="https://proa.org.br"><img src="./assets/images/icons/proa-logo.png" alt="Instituto PROA" height="24" valign="middle" /></a>&nbsp;&nbsp;<a href="https://serasaexperian.com.br"><img src="./assets/images/icons/serasa-logo.png" alt="Serasa Experian" height="28" valign="middle" /></a>
+</div>
+
+
+---
 
 <span style="display: flex; align-items: center"><img src="./assets/images/logo-circle-grimorio-dev.svg"> O Grimório Dev... A responsive institutional/creative/professional page/application/service from company/portfolio to showcase a this and that.
 
+---
 
 ## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/image-icon.png"> Visual Preview
 
@@ -32,7 +36,17 @@
   <em>Figure 2: mobile responsive showing focus states.</em>
 </p>
 
----
+## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/person-icon.png"> Equipe - Squad 2
+
+| Nome | Papel | Linkedin | GitHub |
+| :--- | :---: | :---: | ---: |
+| Alex Furukawa | Product Owner/Dev Frontend |  [![LinkedIn](https://custom-icon-badges.demolab.com/badge/%20-0A66C2?logo=linkedin-white&logoColor=fff)](linkedin.com/in/lexkawa/) | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/dev-corvus/) |
+| Davi Henrique | Dev Frontend |  [![LinkedIn](https://custom-icon-badges.demolab.com/badge/%20-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/davi-henrique-cordeiro-571029408/) | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/Davihsc18) |
+| Isabel dos Santos | UX/UI |  [![LinkedIn](https://custom-icon-badges.demolab.com/badge/%20-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/isabelsantosneves/) | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/IsabelSantosDev) |
+| Kauê Batista | Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/kauebatista72) |
+| Leila Cristina | Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/spheressong-wq) |
+| Nicolly Menezes | UX/UI |  - | - |
+| Riyan Querino | Scrum Master/Dev Frontend |  - | [![GitHub](https://img.shields.io/badge/%20-%23121011.svg?logo=github&logoColor=white)](https://github.com/phantera-ark)|
 
 ## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/feature-icon.png"> Features
 
@@ -40,7 +54,6 @@
 * **Responsive Layout:** Fluid layouts implemented using CSS Flexbox and media queries to adapt cleanly between mobile devices, tablets, and desktop displays
 * **Styling & Visual Identity:** Cohesive color palette and typography centered around personal design choices, utilizing CSS custom properties (variables) for consistent maintenance
 * **Extra:** Focus States in orange
----
 
 ## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/wrench-icon.png"> 5. Tools & Technologies
 
@@ -49,11 +62,10 @@
 | **Markup & Semantics** | HTML5 (Semantic Elements, ARIA Attributes) |
 | **Styling & Layout** | CSS3 (Flexbox, CSS Variables, Media Queries, Focus States) |
 | **Design & Assets** | [Figma](https://www.figma.com/design/cKmA01QadQI2HPQhdcaH5H/portifolio23?node-id=0-1&p=f&t=pVNOAur8NRrnLEsz-0), [Google Fonts](https://fonts.google.com/specimen/Courier+Prime) |
-| **Version Control & Collaboration** | [Git, GitHub](https://github.com/dev-corvus)|
+| **Version Control & Collaboration** | [Git, GitHub](https://github.com/grimorio-dev)|
 | **Code Editor** | Visual Studio Code |
 |  **Deployment & Build Tools:** | [GitHub Pages](https://dev-corvus.github.io/portfolio) |
 
----
 
 ## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/folder-icon.png"> 6. Project Structure
 
@@ -65,8 +77,6 @@
 ├── style.css
 └── README.md
 ```
-
----
 
 ## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/book-icon.png"> 7. Reflection & Retrospective
 
@@ -99,16 +109,7 @@ This section turns a generic project into a compelling case study.
   * button to toggle english/spanish & german translations
   * hamburger menu for mobile
 
----
-
-## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/bookmark-icon.png"> 9. Acknowledgements
-* Serasa Experian + Instituto PROA: For creating and supporting the educational program. Hats off to Mago da Silva.
-
----
-
-## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/person-icon.png"> Squad 2
-
-
-| Nome | Papel | Linkedin | GitHub |
-| :--- | :---: | :---: | ---: |
-| Alex Furukawa | Product Owner/Dev Frontend |  [![LinkedIn](https://custom-icon-badges.demolab.com/badge/linkedin-0A66C2?logo=linkedin-white&logoColor=fff)](linkedin.com/in/lexkawa/) | [![GitHub Pages](https://img.shields.io/badge/github-%23121011.svg?logo=github&logoColor=white)](https://github.com/dev-corvus/) |
+## <span style="display: flex; gap: 8px;"><img src="./assets/images/icons/bookmark-icon.png"> 9. Agradecimentos
+Agradecemos as instituições envolvidas e aos instrutores:
+* Mago da Silva, também conhecido como Denis, inspirando na criação do grimório e ao nosso mascote Deninho.
+* Grazi Ribeiro, instrutora de projetos com aulas desenvolvidas no formato de sprints.
