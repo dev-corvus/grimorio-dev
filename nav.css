@@ -1,0 +1,69 @@
+/* =========================
+   NAVEGAÇÃO PRINCIPAL
+   Carregue DEPOIS do style.css (ou cole este bloco no final dele).
+   Usa a mesma paleta do tema escuro do Grimório Dev.
+   ========================= */
+
+/* Landing: logo em cima, menu embaixo */
+.top-logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Quiz e ranking: logo à esquerda, menu à direita, quebra em telas pequenas */
+.quiz-header,
+.topo {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    color: #b8bacb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: #1b1c26;
+    border-color: #2d2f3e;
+    color: #ffffff;
+}
+
+.main-nav a[aria-current="page"] {
+    background-color: #1b1c26;
+    border-color: #6c47ff;
+    color: #ffffff;
+}
+
+/* Links dentro dos títulos dos cards de recursos */
+.card-link {
+    color: #a992ff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Menu no rodapé */
+.footer-nav {
+    margin: 20px 0 16px;
+}

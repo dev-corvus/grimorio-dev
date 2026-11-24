@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Grimório Dev</title>
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <header class="quiz-header">
+        <div class="logo">
+            <a href="index.html" aria-label="Voltar para a página inicial">
+                <img src="assets/images/favicon.svg" alt="Ícone do mascote">
+            </a>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Cadastro</a></li>
+                <li><a href="quiz.html" aria-current="page">Quizzes</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </ul>
+        </nav>
+
+        <div class="quiz-status" aria-live="polite">
+            <span id="quiz-progresso">Questão 1/4</span>
+            <strong id="quiz-pontos">0 pts</strong>
+        </div>
+    </header>
+
+    <main class="quiz-main">
+        <section id="quiz-container" aria-labelledby="quiz-pergunta">
+            <p id="quiz-tema" class="quiz-tema">HTML &amp; Web</p>
+            <h1 id="quiz-pergunta">Carregando questão...</h1>
+
+            <div id="quiz-alternativas" class="alternativas" role="group" aria-label="Alternativas da questão">
+                <button type="button" class="bt-alt">A - Alternativa</button>
+                <button type="button" class="bt-alt">B - Alternativa</button>
+                <button type="button" class="bt-alt">C - Alternativa</button>
+                <button type="button" class="bt-alt">D - Alternativa</button>
+            </div>
+
+            <p id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="quiz-resultado" class="quiz-resultado" hidden>
+            <h1>Quiz concluído!</h1>
+            <p id="resultado-resumo"></p>
+            <div class="quiz-acoes-finais">
+                <button type="button" id="btn-jogar-novamente" class="btn-cadastrar">Jogar novamente</button>
+                <a href="ranking.html" class="botao">Ver Ranking</a>
+            </div>
+        </section>
+
+        <section id="quiz-controles" class="pular" aria-label="Controles da questão">
+            <button type="button" id="btn-pular" class="btn-pular">Pular</button>
+            <button type="button" id="btn-proxima" class="btn-cadastrar quiz-btn-proxima" hidden>Próxima</button>
+        </section>
+    </main>
+
+    <footer class="footp">
+        <nav class="main-nav footer-nav" aria-label="Navegação do rodapé">
+            <ul>
+                <li><a href="index.html">Cadastro</a></li>
+                <li><a href="quiz.html" aria-current="page">Quizzes</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </ul>
+        </nav>
+        <p class="pp">&copy; 2026 Grimório Dev. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
