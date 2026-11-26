@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     
     <link rel="icon" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="style.css">
@@ -15,5 +16,93 @@
 <!-- -------------------------------- HERO --------------------------------  -->
 <!-- -------------------------------- ABOUT(PROJETO) --------------------------------  -->
 <!-- -------------------------------- FOOTER --------------------------------  -->
+=======
+    <meta name="theme-color" content="#17171f">
+    <title>Início | Grimório Dev</title>
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="is-dashboard">
+    <div class="dashboard-view">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Grimório Dev - início">
+                <img src="assets/images/logo-circle-grimorio-dev.svg" alt="">
+                <span>Grimório Dev</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                </ul>
+            </nav>
+
+            <div class="account nav-trailing">
+                <button
+                    class="account-trigger"
+                    id="account-trigger"
+                    type="button"
+                    aria-label="Abrir menu da conta de Usuário"
+                    aria-expanded="true"
+                    aria-controls="account-menu"
+                >U</button>
+                <nav class="account-menu" id="account-menu" aria-label="Menu da conta">
+                    <button class="menu-item" type="button" data-message="A página do seu perfil estará disponível em breve.">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/></svg>
+                        <span>Meu Perfil</span>
+                    </button>
+                    <button class="menu-item" type="button" data-message="As configurações da conta estarão disponíveis em breve.">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m19.4 13 .03-.99-.03-.99 2.1-1.64-2-3.46-2.48 1a7.8 7.8 0 0 0-1.7-.99L14.94 3h-4l-.38 2.93c-.61.24-1.18.57-1.7.99l-2.48-1-2 3.46 2.1 1.64-.03.99.03.99-2.1 1.64 2 3.46 2.48-1c.52.42 1.09.75 1.7.99l.38 2.93h4l.38-2.93c.61-.24 1.18-.57 1.7-.99l2.48 1 2-3.46L19.4 13ZM12.94 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"/></svg>
+                        <span>Configurações</span>
+                    </button>
+                    <a class="menu-item" href="cadastro.html">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 17v-2h4V9h-4V7l-5 5 5 5Zm9-14H5a2 2 0 0 0-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
+                        <span>Sair</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="welcome" aria-labelledby="welcome-title">
+                <h1 id="welcome-title">Olá, <span>Usuário</span>!</h1>
+                <p>Pronto para desbloquear uma nova conquista hoje?</p>
+            </section>
+
+            <section class="start-card" aria-labelledby="start-title">
+                <h2 id="start-title">Comece sua jornada</h2>
+                <p class="start-highlight">Seus desafios te esperam!</p>
+                <p class="start-description">Comece seus estudos e avance no seu aprendizado.</p>
+                <a class="start-button" href="quiz.html">Começar estudos</a>
+            </section>
+
+            <section class="study-section" aria-labelledby="study-title">
+                <h2 id="study-title">O que vamos estudar?</h2>
+                <div class="study-list">
+                    <a class="study-card" href="quiz.html">
+                        <span class="study-number">01</span>
+                        <span class="study-copy"><strong>Quiz</strong><span>Teste seus conhecimentos</span></span>
+                    </a>
+                    <a class="study-card" href="ranking.html">
+                        <span class="study-number">02</span>
+                        <span class="study-copy"><strong>Ranking</strong><span>Compare suas conquistas</span></span>
+                    </a>
+                    <button class="study-card" type="button" data-message="Os materiais de estudo estarão disponíveis em breve.">
+                        <span class="study-number">03</span>
+                        <span class="study-copy"><strong>Materiais</strong><span>Veja os conteúdos</span></span>
+                    </button>
+                </div>
+            </section>
+            <p class="account-message" id="account-message" role="status" aria-live="polite"></p>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Grimório Dev. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+>>>>>>> Stashed changes
 </body>
 </html>

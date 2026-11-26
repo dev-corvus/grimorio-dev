@@ -1,0 +1,145 @@
+body.has-site-header {
+    padding-top: 0;
+    align-items: stretch;
+}
+
+.site-header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 80px;
+    padding: 12px clamp(16px, 4vw, 36px);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    align-self: stretch;
+    border: 1px solid #332a3c;
+    background: #17171f;
+    color: #dedbea;
+}
+
+.site-header .brand {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+    font-size: 1.125rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.site-header .brand img {
+    width: 44px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.site-header .main-nav {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header .main-nav ul {
+    justify-content: flex-end;
+}
+
+.main-nav a {
+    min-height: 44px;
+    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #b8bacb;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.main-nav a:hover {
+    border-color: #2d2f3e;
+    background-color: #1b1c26;
+    color: #ffffff;
+}
+
+.main-nav a[aria-current="page"] {
+    border-color: #6c47ff;
+    background-color: #1b1c26;
+    color: #ffffff;
+}
+
+.site-header .nav-trailing {
+    flex: 0 0 auto;
+    margin-left: auto;
+}
+
+.quiz-status {
+    width: 100%;
+    min-height: 32px;
+    padding: 4px clamp(16px, 4vw, 36px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.card-link {
+    color: #a992ff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.footer-nav {
+    margin: 20px 0 16px;
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        flex-wrap: wrap;
+        gap: 4px 8px;
+        padding: 10px 14px;
+    }
+
+    .site-header .brand {
+        order: 1;
+        flex: 1 0 100%;
+    }
+
+    .site-header .main-nav {
+        order: 2;
+        flex: 1 1 auto;
+    }
+
+    .site-header .main-nav ul {
+        justify-content: flex-end;
+        gap: 2px;
+    }
+
+    .site-header .main-nav a {
+        min-height: 40px;
+        padding: 6px 10px;
+        font-size: 0.82rem;
+    }
+
+    .site-header .nav-trailing {
+        order: 3;
+        margin-left: auto;
+    }
+}
