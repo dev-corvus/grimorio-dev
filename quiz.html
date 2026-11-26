@@ -9,27 +9,26 @@
     <link rel="stylesheet" href="nav.css">
     <script src="quiz.js" defer></script>
 </head>
-<body>
-    <header class="quiz-header">
-        <div class="logo">
-            <a href="index.html" aria-label="Voltar para a página inicial">
-                <img src="assets/images/favicon.svg" alt="Ícone do mascote">
-            </a>
-        </div>
-
+<body class="has-site-header">
+    <header class="site-header quiz-header">
+        <a class="brand" href="index.html" aria-label="Grimório Dev - início">
+            <img src="assets/images/logo-circle-grimorio-dev.svg" alt="">
+            <span>Grimório Dev</span>
+        </a>
         <nav class="main-nav" aria-label="Navegação principal">
             <ul>
-                <li><a href="index.html">Cadastro</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="quiz.html" aria-current="page">Quizzes</a></li>
                 <li><a href="ranking.html">Ranking</a></li>
             </ul>
         </nav>
 
-        <div class="quiz-status" aria-live="polite">
-            <span id="quiz-progresso">Questão 1/4</span>
-            <strong id="quiz-pontos">0 pts</strong>
-        </div>
     </header>
+
+    <div class="quiz-status" aria-live="polite">
+        <span id="quiz-progresso">Questão 1/4</span>
+        <strong id="quiz-pontos">0 pts</strong>
+    </div>
 
     <main class="quiz-main">
         <section id="quiz-container" aria-labelledby="quiz-pergunta">
@@ -62,13 +61,6 @@
     </main>
 
     <footer class="footp">
-        <nav class="main-nav footer-nav" aria-label="Navegação do rodapé">
-            <ul>
-                <li><a href="index.html">Cadastro</a></li>
-                <li><a href="quiz.html" aria-current="page">Quizzes</a></li>
-                <li><a href="ranking.html">Ranking</a></li>
-            </ul>
-        </nav>
         <p class="pp">&copy; 2026 Grimório Dev. Todos os direitos reservados.</p>
     </footer>
 </body>

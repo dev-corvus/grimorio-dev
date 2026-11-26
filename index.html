@@ -3,194 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grimório Dev - Cadastro</title>
+<<<<<<< Updated upstream
+    
     <link rel="icon" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <div class="container">
-        <header class="top-logo">
-            <img src="assets/images/logo-circle-grimorio-dev.svg" alt="Grimório Dev Ícone">
+<!-- -------------------------------- MAIN --------------------------------  -->
+<!-- -------------------------------- HERO --------------------------------  -->
+<!-- -------------------------------- ABOUT(PROJETO) --------------------------------  -->
+<!-- -------------------------------- FOOTER --------------------------------  -->
+=======
+    <meta name="theme-color" content="#17171f">
+    <title>Início | Grimório Dev</title>
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="is-dashboard">
+    <div class="dashboard-view">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Grimório Dev - início">
+                <img src="assets/images/logo-circle-grimorio-dev.svg" alt="">
+                <span>Grimório Dev</span>
+            </a>
 
             <nav class="main-nav" aria-label="Navegação principal">
                 <ul>
-                    <li><a href="index.html" aria-current="page">Cadastro</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
                     <li><a href="quiz.html">Quizzes</a></li>
                     <li><a href="ranking.html">Ranking</a></li>
                 </ul>
             </nav>
+
+            <div class="account nav-trailing">
+                <button
+                    class="account-trigger"
+                    id="account-trigger"
+                    type="button"
+                    aria-label="Abrir menu da conta de Usuário"
+                    aria-expanded="true"
+                    aria-controls="account-menu"
+                >U</button>
+                <nav class="account-menu" id="account-menu" aria-label="Menu da conta">
+                    <button class="menu-item" type="button" data-message="A página do seu perfil estará disponível em breve.">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/></svg>
+                        <span>Meu Perfil</span>
+                    </button>
+                    <button class="menu-item" type="button" data-message="As configurações da conta estarão disponíveis em breve.">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m19.4 13 .03-.99-.03-.99 2.1-1.64-2-3.46-2.48 1a7.8 7.8 0 0 0-1.7-.99L14.94 3h-4l-.38 2.93c-.61.24-1.18.57-1.7.99l-2.48-1-2 3.46 2.1 1.64-.03.99.03.99-2.1 1.64 2 3.46 2.48-1c.52.42 1.09.75 1.7.99l.38 2.93h4l.38-2.93c.61-.24 1.18-.57 1.7-.99l2.48 1 2-3.46L19.4 13ZM12.94 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"/></svg>
+                        <span>Configurações</span>
+                    </button>
+                    <a class="menu-item" href="cadastro.html">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 17v-2h4V9h-4V7l-5 5 5 5Zm9-14H5a2 2 0 0 0-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
+                        <span>Sair</span>
+                    </a>
+                </nav>
+            </div>
         </header>
 
-        <main class="content">
-            <div class="hero-brand">
-                <img src="assets/images/logo-grimorio-dev.svg" alt="Mago Grimório Dev" class="mago-img">
-            </div>
-
-            <p class="subtitle">Transforme sua rotina de estudos em conquistas reais.</p>
-            <p class="description">
-                Quizzes, materiais de apoio e acompanhamento de desempenho em uma plataforma feita para impulsionar o seu futuro no Transforme-se.
-            </p>
-
-            <h2>Junte-se a nós gratuitamente!</h2>
-
-            <form action="quiz.html">
-                <div class="input-group">
-                    <label for="username">Nome de Usuário:</label>
-                    <input type="text" id="username" name="username" maxlength="16" required>
-                    <span class="counter">0/16</span>
-                </div>
-
-                <div class="input-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" minlength="8" required>
-                    <span class="helper">8+ caracteres</span>
-                </div>
-
-                <button type="submit" class="btn-cadastrar">Cadastre-se</button>
-            </form>
-
-            <div class="login-redirect">
-                <p>Ou</p>
-                <a href="quiz.html">Login</a>
-            </div>
-
-            <section class="features-section">
-                <h2>O que nossa plataforma oferece?</h2>
-                <p class="section-intro">
-                    Estudantes do <strong>Transforme-se</strong> estão construindo o futuro da tecnologia.
-                    <strong>Engajamento consistente</strong> com a eficácia da gamificação em estimular sua motivação.
-                </p>
-
-                <div class="students-list">
-                    <div class="student-card">
-                        <div class="avatar" aria-hidden="true"></div>
-                        <div class="student-info">
-                            <span class="student-name">"Aluno 1"</span>
-                            <p>Aumentou sua participação de 0% para 70%</p>
-                        </div>
-                    </div>
-
-                    <div class="student-card">
-                        <div class="avatar" aria-hidden="true"></div>
-                        <div class="student-info">
-                            <span class="student-name">"Aluno 2"</span>
-                            <p>Aumentou sua participação de 30% para 100%!</p>
-                        </div>
-                    </div>
-
-                    <div class="student-card">
-                        <div class="avatar" aria-hidden="true"></div>
-                        <div class="student-info">
-                            <span class="student-name">"Aluno 3"</span>
-                            <p>Aumentou sua participação de 20% para 90%</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="resource-cards">
-                    <div class="card">
-                        <div class="card-icon" aria-hidden="true">?</div>
-                        <div class="card-content">
-                            <h3><a href="quiz.html" class="card-link">Quizzes Interativos</a></h3>
-                            <p>Pratique com testes dinâmicos e fixe o conteúdo</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon" aria-hidden="true">📖</div>
-                        <div class="card-content">
-                            <h3>Materiais de Estudo</h3>
-                            <p>Acesse resumos e conteúdos complementares</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon" aria-hidden="true">//</div>
-                        <div class="card-content">
-                            <h3>Veja seu Desempenho</h3>
-                            <p>Monitore sua evolução e ache pontos de melhoria</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon" aria-hidden="true">//</div>
-                        <div class="card-content">
-                            <h3><a href="ranking.html" class="card-link">Sistema de Ranking</a></h3>
-                            <p>Acompanhe sua posição e mantenha a motivação</p>
-                        </div>
-                    </div>
-                </div>
+        <main class="dashboard">
+            <section class="welcome" aria-labelledby="welcome-title">
+                <h1 id="welcome-title">Olá, <span>Usuário</span>!</h1>
+                <p>Pronto para desbloquear uma nova conquista hoje?</p>
             </section>
 
-            <section class="transformation-section">
-                <h2>A Transformação na Prática</h2>
-                <p class="transformation-intro">
-                    <strong>A nossa proposta</strong> transforma a forma como os estudantes do <strong>Transforme-se</strong> aprendem, evoluem e se preparam para o futuro:
-                </p>
+            <section class="start-card" aria-labelledby="start-title">
+                <h2 id="start-title">Comece sua jornada</h2>
+                <p class="start-highlight">Seus desafios te esperam!</p>
+                <p class="start-description">Comece seus estudos e avance no seu aprendizado.</p>
+                <a class="start-button" href="quiz.html">Começar estudos</a>
+            </section>
 
-                <div class="step-cards">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>De dúvidas soltas para respostas claras:</h3>
-                            <p>Os estudantes conseguem identificar facilmente as suas principais dificuldades através do sistema de quizzes e testes práticos.</p>
-                        </div>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>De estudos sem rumo para acompanhamento contínuo:</h3>
-                            <p>Acompanhamento em tempo real da evolução e do progresso individual ao longo do curso.</p>
-                        </div>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>De dependência para autonomia:</h3>
-                            <p>Construção de hábitos de estudo independentes, no seu próprio ritmo, com organização e clareza.</p>
-                        </div>
-                    </div>
+            <section class="study-section" aria-labelledby="study-title">
+                <h2 id="study-title">O que vamos estudar?</h2>
+                <div class="study-list">
+                    <a class="study-card" href="quiz.html">
+                        <span class="study-number">01</span>
+                        <span class="study-copy"><strong>Quiz</strong><span>Teste seus conhecimentos</span></span>
+                    </a>
+                    <a class="study-card" href="ranking.html">
+                        <span class="study-number">02</span>
+                        <span class="study-copy"><strong>Ranking</strong><span>Compare suas conquistas</span></span>
+                    </a>
+                    <button class="study-card" type="button" data-message="Os materiais de estudo estarão disponíveis em breve.">
+                        <span class="study-number">03</span>
+                        <span class="study-copy"><strong>Materiais</strong><span>Veja os conteúdos</span></span>
+                    </button>
                 </div>
             </section>
+            <p class="account-message" id="account-message" role="status" aria-live="polite"></p>
         </main>
 
-        <footer class="footer-section">
-            <div class="footer-logo">
-                <img src="assets/images/logo-circle-grimorio-dev.svg" alt="Grimório Dev Ícone">
-            </div>
-
-            <h2>O Grimório Dev é o seu aliado.</h2>
-            <p class="footer-call">
-                <strong>Junte-se a nós</strong>, explore a plataforma e <strong>transforme o seu aprendizado</strong> em uma verdadeira aventura!
-            </p>
-
-            <nav class="main-nav footer-nav" aria-label="Navegação do rodapé">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Cadastro</a></li>
-                    <li><a href="quiz.html">Quizzes</a></li>
-                    <li><a href="ranking.html">Ranking</a></li>
-                </ul>
-            </nav>
-
-            <p class="copyright">&copy; 2026 Grimório Dev. Todos os direitos reservados.</p>
-
-            <div class="credits">
-                <p class="platform-by">Plataforma por</p>
-                <h3>Squad 2</h3>
-                <p class="students-group">
-                    Alunos no grupo:<br>
-                    <span>Nicolly, Alex, Riyan, Isabel, Davi, Leila, Kauê</span>
-                </p>
-            </div>
+        <footer class="site-footer">
+            <p>&copy; 2026 Grimório Dev. Todos os direitos reservados.</p>
         </footer>
     </div>
+>>>>>>> Stashed changes
 </body>
 </html>
